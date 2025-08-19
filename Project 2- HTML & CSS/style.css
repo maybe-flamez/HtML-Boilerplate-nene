@@ -1,28 +1,211 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 body {
-  max-width: 600px;
-  margin: 0 auto;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-.one {
-  background: pink;
-  border: 3px solid blue;
-  /* CHANGE ME */
-  padding: 32px;
-  margin: 12px;
+/* ===== HEADER ===== */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.two {
-  background: lightblue;
-  border: 3px solid purple;
-  /* CHANGE ME */
-  margin-bottom: 48px;
+header h1 {
+    font-size: 2rem;
 }
 
-.three {
-  background: peachpuff;
-  border: 3px solid brown;
-  width: 200px;
-  /* CHANGE ME */
-  padding: 32px;
-  margin-left: auto;
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== HERO SECTION ===== */
+#home {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 10%;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#home button {
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#home button:hover {
+    background-color: #f1f1f1;
+}
+
+/* ===== ABOUT SECTION ===== */
+#about {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#about article, #about aside {
+    flex: 1 1 300px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* ===== BLOG SECTION ===== */
+#blog {
+    padding: 50px 10%;
+}
+
+#blog article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+#blog article h3 {
+    margin-bottom: 10px;
+}
+
+#blog figure {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#blog img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact {
+    padding: 50px 10%;
+    background-color: #f1f1f1;
+}
+
+#contact form fieldset {
+    border: none;
+    padding: 0;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#contact button:hover {
+    background-color: #45a049;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10%;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #home {
+        padding: 80px 5%;
+    }
+
+    #home h2 {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #home h2 {
+        font-size: 1.5rem;
+    }
+
+    #home button {
+        padding: 10px 20px;
+    }
 }
