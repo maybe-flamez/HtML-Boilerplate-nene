@@ -1,2 +1,2 @@
 # HtML-Boilerplate-nene
-TOP
+This is the foundations of my HTML, CSS and Javascript foundation Journey.
