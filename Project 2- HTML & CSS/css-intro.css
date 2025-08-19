@@ -1,18 +1,26 @@
-.container {
-  background: dodgerblue;
-  border: 4px solid midnightblue;
-  width: 400px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
 }
 
-.box {
-  background: palevioletred;
-  font-weight: bold;
-  text-align: center;
-  border: 6px solid maroon;
-  width: 80px;
-  height: 80px;
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
 }
